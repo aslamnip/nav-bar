@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Home</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body style="background: black;">
+	<section>
+		<div class="container">
+			<ul class="nav bg-light navi">
+				<li class="list nav-item active"><a class="nav-link" href="">Home</a><span><i class="icon fa fa-home"></i></span></li>
+				<li class="list nav-item"><a class="nav-link" href="">Profile</a><span><i class="icon fa fa-user"></i></span></li>
+				<li class="list nav-item"><a class="nav-link" href="">Message</a><span><i class="icon fa fa-sms"></i></span></li>
+				<li class="list nav-item"><a class="nav-link" href="">Photos</a><span><i class="icon fa fa-camera"></i></span></li>
+				<li class="list nav-item"><a class="nav-link" href="">Setting</a><span><i class="icon fa fa-cog"></i></span></li>
+
+				<div class="indicator">
+					
+				</div>
+			</ul>
+			
+		</div>
+	</section>
+
+	<script>
+		let list = document.querySelectorAll('.list');
+		function activeLink() {
+			list.forEach((item) =>
+			item.classList.remove('active'))
+			this.classList.add('active')
+		};
+		
+		list.forEach((item) =>
+		item.addEventListener('click', activeLink));
+
+	</script>
+
+	<script src="js/fontawesome.min.js"> </script>
+	<script src="js/all.min.js"> </script>
+	<script src="js/jquery-slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/tether.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

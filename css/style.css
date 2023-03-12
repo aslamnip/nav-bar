@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:monospace;
+}
+
+.icon{
+	margin-right: 5px;
+	position: relative;
+	bottom: 15px ;
+	font-size: 30px;
+	z-index: 1;
+	margin-left: 15px;
+
+	
+}
+
+.navi {
+	position: fixed;
+	bottom: 0;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	width: 450px;
+	
+}
+
+.navi  li a {
+	position: relative;
+	bottom: -50px;
+	opacity: 0;
+	font-size: 18px;
+	
+	
+}
+.navi  li {
+	position: relative;
+	width: 70px;
+	margin: 5px;
+}
+.navi li.active .icon {
+	transform: translateY(-40px);
+	transition: 0.5s;
+}
+.navi li.active a {
+	opacity: 1;
+	transition: 0.5s;
+	bottom: -30px;
+}
+
+.indicator{
+
+	background: #18ef18;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 52%;
+	border: 6px solid black;
+	border-radius: 50%;
+	margin-left: 10px;
+	transition: 0.5s;
+}
+
+.navi li:nth-child(1).active ~ .indicator
+{
+	transform: translateX(calc(80px * 0));
+}
+
+.navi li:nth-child(2).active ~ .indicator
+{
+	transform: translateX(calc(80px * 1));
+}
+
+.navi li:nth-child(3).active ~ .indicator
+{
+	transform: translateX(calc(80px * 2));
+}
+
+.navi li:nth-child(4).active ~ .indicator
+{
+	transform: translateX(calc(80px * 3));
+}
+
+.navi li:nth-child(5).active ~ .indicator
+{
+	transform: translateX(calc(80px * 4));
+}
+
+
+
+
+
+
+
+
+
+
